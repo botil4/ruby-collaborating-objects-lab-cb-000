@@ -1,3 +1,4 @@
+require 'pry'
 class MP3Importer
 
   attr_accessor :path, :filenames
@@ -8,6 +9,7 @@ class MP3Importer
 
   def files
     filenames = Dir.entries(path)
+    binding.pry
   end
 
   def import
